@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | DelishBite</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image:url('data:image/jpeg;base64,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') ;
+
+    background-size: cover;
+    }
+
+        .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ff6b6b;
+      color: white;
+    }
+
+        .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #ffeaa7;
+    }
+
+
+
+    header {
+      background-color: #ff7e5f;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-container h2 {
+      margin-bottom: 20px;
+      color: #ff7e5f;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      resize: vertical;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #ff7e5f;
+      box-shadow: 0 0 5px #ff7e5f;
+    }
+
+    button {
+      padding: 12px;
+      background: #ff7e5f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #eb6a4c;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background-color: #ffdac1;
+      color: #333;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 600px) {
+      .contact-container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+ <nav class="navbar">
+    <div class="logo">DelishBite</div>
+    <ul class="nav-links">
+ <li><a href="file:///C:/Users/HP/Downloads/New%20folder/git/javascript%20learning/food.html">Home</a></li>
+      <li><a href="file:///C:/Users/HP/Downloads/New%20folder/git/javascript%20learning/menu%20fd%20.html">Menu</a></li>
+      <li><a href="file:///C:/Users/HP/Downloads/New%20folder/git/javascript%20learning/about%20fd.html">About</a></li>
+       <li><a href="file:///C:/Users/HP/Downloads/New%20folder/git/javascript%20learning/contact%20fd.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Reach out for questions, feedback or catering inquiries.</p>
+  </header>
+
+  <div class="contact-container">
+    <h2>Send us a Message</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="tel" placeholder="Your Phone (Optional)" />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Our Location</h3>
+      <p>DelishBite HQ, Food Street 21,<br>Bilaspur, India - 110001</p>
+      <p>Email: contact@delishbite.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 DelishBite | Crafted with Flavor and Love
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DelishBite | Food Heaven</title>
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ff6b6b;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #ffeaa7;
+    }
+
+    .nav-btn {
+      background-color: #fff;
+      color: #ff6b6b;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .nav-btn:hover {
+      background-color: #ff4757;
+      color: white;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 2rem;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 8px #333;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 6px #333;
+      font-style: none;
+    }
+
+    .hero-btn {
+      padding: 0.8rem 1.5rem;
+      background-color: #ff6b6b;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .hero-btn:hover {
+      background-color: #ff4757;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">DelishBite</div>
+    <ul class="nav-links">
+      <li><a href="file:///C:/Users/HP/Downloads/New%20folder/git/javascript%20learning/food.html">Home</a></li>
+      <li><a href="file:///C:/Users/HP/Downloads/New%20folder/git/javascript%20learning/menu%20fd%20.html">Menu</a></li>
+      <li><a href="file:///C:/Users/HP/Downloads/New%20folder/git/javascript%20learning/about.html">About</a></li>
+      <li><a href="file:///C:/Users/HP/Downloads/New%20folder/git/javascript%20learning/contact%20fd.html">Contact</a></li>
+    </ul>
+<a href="order.html">
+  <button class="nav-btn">Order Now</button>
+</a>
+
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Food Heaven</h1>
+      <p>Delicious meals delivered to your door</p>
+      <a href="file:///C:/Users/HP/Downloads/New%20folder/git/javascript%20learning/explore%20fd.html" class="hero-btn" onclick="orderAlert()">Explore Menu</a>
+    </div>
+  </section>
+
+  <script>
+    function orderAlert() {
+      alert("Thanks for choosing DelishBite! Menu coming soon...");
+    }
+
+    function highlightNav() {
+      const btn = document.querySelector('.nav-btn');
+      btn.style.backgroundColor = "#ffeaa7";
+      btn.innerText = "Redirecting...";
+      setTimeout(() => {
+        btn.innerText = "Order Now";
+        btn.style.backgroundColor = "#fff";
+      }, 1500);
+    }
+  </script>
+</body>
+</html>
